@@ -1,0 +1,43 @@
+# --- Secrets / local config ---
+.env
+*.env
+
+# --- Runtime-generated data (per-deployment, not source code) ---
+reports/
+reports_hotsaw1/
+cut_events/
+debug_frames/
+motion_masks/
+bright_masks/
+logs/
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Generated report files (CSV/XLSX are output, not source) ---
+*_report.csv
+*_report.xlsx
+*_session.csv
+*_session.json
+combined_report.xlsx
+
+# --- YOLO model weights (large binaries; store separately / Git LFS) ---
+*.pt
+*.onnx
+*.engine
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
